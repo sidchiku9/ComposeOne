@@ -15,13 +15,19 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             Greeting(name = "Siddharth")
-                }
-            }
-    
+        }
+    }
+
     @Composable
     fun Greeting(name : String){
         Text("Hello $name")
     }
-        }
+
+    @Preview
+    @Composable
+    fun PreviewGreeting(){
+        Greeting("Siddharth")
+    }
+}
 
 
