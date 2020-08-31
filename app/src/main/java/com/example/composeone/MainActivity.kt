@@ -3,6 +3,7 @@ package com.example.composeone
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.compose.foundation.Text
+import androidx.compose.foundation.layout.Column
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
 import androidx.compose.runtime.Composable
@@ -20,9 +21,12 @@ class MainActivity : AppCompatActivity() {
 
     @Composable
     fun NewsStory(){
-        Text("A day in Shark Fin Cove")
-        Text("Raipur, Chhattisgarh")
-        Text("August 2020")
+        Column{
+            Text("A day in Shark Fin Cove")
+            Text("Raipur, Chhattisgarh")
+            Text("August 2020")
+        }
+
     }
 
     @Preview
